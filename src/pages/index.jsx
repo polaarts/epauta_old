@@ -98,7 +98,7 @@ export default function Home() {
   } else {
     return (
       <>
-      <Analytics />
+        <Analytics />
         <head>
           <title>ePAUTA</title>
           <meta
@@ -123,6 +123,40 @@ export default function Home() {
                 className="p-3 border-2 border-gray-200 bg-gray-50 focus:ring focus:ring-gray-300 focus:outline-none rounded-[5px] h-[35px] lg:w-1/2 w-full"
               />
             </nav>
+            <div className="flex justify-center">
+              <div className="bg-red-100 text-red-400 md:rounded p-6 mt-4 lg:w-1/2 w-full">
+                <div className="float-right">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-12 h-12"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z"
+                    />
+                  </svg>
+                </div>
+                <h3>Responde la encuesta de Feedback.</h3>
+                <p>
+                  Estará habilitada por hasta el 14 de mayo a las 23:59 hrs.
+                  <br />
+                  Accede a ella{" "}
+                  <a
+                    href="https://forms.gle/kqdiZfwQJsTgJquD8"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-bold underline underline-offset-4"
+                  >
+                    ACÁ
+                  </a>
+                </p>
+              </div>
+            </div>
           </header>
           <div className="grid grid-cols-1 lg:grid-cols-3 md:gap-6 space-y-6 md:space-y-0 mx-4 mb-8">
             <div className="bg-gray-100 sm:grid-cols-1 border-red-200 border-2 h-min rounded-[5px] relative w-full">
